@@ -5,12 +5,12 @@
 </head>
 <body>
 <p>
-      <button onclick="location.href = 'http://localhost/returnhomebutton/index.php';" id="myButton">Return home</button>
+      <button onclick="location.href = 'http://localhost/EmailLink/index.php';" id="myButton">Return home</button>
 </p>
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
-        location.href = "http://localhost/returnhomebutton/index.php";
+        location.href = "http://localhost/EmailLink/index.php";
     };
 </script>
  
@@ -53,7 +53,7 @@ if($result) {
                     <td>{$row['mime']}</td>
                     <td>{$row['size']}</td>
                     <td>{$row['created']}</td>
-                    <td><a href='get_file.php?id={$row['id']}'>Download</a></td>
+                    <td><a href='downloadFile.php?id={$row['id']}'>Download</a></td>
                 </tr>";
         }
  
